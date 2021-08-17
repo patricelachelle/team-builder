@@ -16,8 +16,10 @@ export default {
   get() {
     return Promise.resolve({ status: 200, success: true, data: initialMembersList })
   },
-  post({ name, email, role }) {
+  post(url, { name, email, role }) {
     const newMember = { id: uuid(), name, email, role }
     return Promise.resolve({ status: 200, success: true, data: newMember })
   }
 }
+
+ 

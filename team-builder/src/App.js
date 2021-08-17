@@ -45,9 +45,9 @@ function App() {
       values={formValues}
     />
     {
-      members.map(member => {
+      members.map((member, idx) => {
         return (
-          <Member key={member.id} details={member} />
+          <Member key={idx} details={member} />
         )
       })
     }
